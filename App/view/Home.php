@@ -14,7 +14,7 @@
 <body>
     <?php include 'includes/navbar.php'; ?>
     <div>
-        <img src="public/images/bg-home.png" alt="home-bg" style="width:100%;z-index:-1;">
+        <img src=" images/bg-home.png" alt="home-bg" style="width:100%;z-index:-1;">
         <div class="d-flex justify-content-center">
             <div class="input-group" style="width:70%">
                 <input type="search" class="form-control rounded" placeholder="Search Wiki , Category , ..."
@@ -30,25 +30,16 @@
                 <div class="pt-5 pb-5"
                     style="border-radius:5px;width:80%;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a style="" href="#" class="btn btn-primary">Go somewhere</a>
+                            <a  href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -57,7 +48,7 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -66,7 +57,7 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -75,7 +66,7 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -84,7 +75,7 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -93,7 +84,16 @@
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="public/images/bg-home.png" alt="Card image cap">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=" images/bg-home.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk

@@ -1,8 +1,9 @@
 <?php 
     namespace App\Controller;
-    class LoginController {
+    // use app\Controller\BaseController;
+    class LoginController extends BaseController {
      
         public function index(){
-            include 'App/view/Login.php';
+            return $this->show('Login');
         }
     }

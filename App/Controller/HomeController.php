@@ -1,10 +1,9 @@
 <?php 
     namespace App\Controller;
     // use app\Controller\BaseController;
-    class HomeController {
+    class HomeController extends BaseController {
      
         public function index(){
-            
-            include 'App/view/Home.php';
+            return $this->show('Home');
         }
     }

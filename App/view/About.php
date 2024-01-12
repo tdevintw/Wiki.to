@@ -29,7 +29,7 @@
             </p>
         </div>
         <div>
-            <img src="public/images/img-about.png" style="height:auto;" alt="earch">
+            <img src=" images/img-about.png" style="height:auto;" alt="earch">
         </div>
     </div>
     <?php include 'includes/footer.php'; ?>

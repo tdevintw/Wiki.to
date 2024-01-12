@@ -1,4 +1,3 @@
 <?php  
-
-    require_once './vendor/autoload.php';
-    require_once './core/router.php';
+    require '../vendor/autoload.php';
+    require '../core/router.php';

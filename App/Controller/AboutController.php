@@ -1,10 +1,9 @@
 <?php 
     namespace App\Controller;
     // use app\Controller\BaseController;
-    class AboutController {
+    class AboutController extends BaseController {
      
         public function index(){
-            
-            include 'App/view/About.php';
+            return $this->show('About');
         }
     }
