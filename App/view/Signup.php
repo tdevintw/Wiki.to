@@ -86,7 +86,7 @@
             <div style="margin-top:20px;">
                 <a class="btn text-white rounded-pill"
                     style="background-color: #36454F ; width:fit-content;padding:10px;padding-right:30px;padding-left:30px;"
-                        href="login.php">already have account !</a>
+                        href="Login">already have account !</a>
             </div>
         </div>
     </section>

@@ -1,12 +1,11 @@
 <?php
 
-namespace router;
+namespace Core;
 class Router
 {
     private string $controller = 'App\Controller\HomeController';
     private string $method = 'index';
     private array $params = array();
-
     public function __construct()
     {
         $this->Sender();
@@ -24,11 +23,11 @@ class Router
             $controller = ucwords($uri[1] ) . 'Controller';
             unset($uri[1]);
             $controller = "App\Controller\\" . $controller;
-                    var_dump(($uri));exit();
             if (class_exists($controller)) {
                 $this->controller = $controller;
+
             } else {
-                include '/app/View/error404.php';
+                include 'App/view/404.php';
                 exit;
             }
         }
@@ -43,7 +42,7 @@ class Router
             if (method_exists($objetController, $method)) {
                 $this->method = $method;
             } else {
-                include '../app/View/error404.php';
+                include 'App/view/404.php';
                 exit;
             }
         }

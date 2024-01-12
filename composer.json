@@ -2,7 +2,8 @@
     "name": "yasser/wiki",
     "autoload": {
         "psr-4": {
-            "Yasser\\Wiki\\": "src/"
+            "App\\": "App/" ,
+            "Core\\": "core/"
         }
     },
     "authors": [

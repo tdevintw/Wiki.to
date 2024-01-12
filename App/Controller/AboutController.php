@@ -3,7 +3,7 @@
     // use app\Controller\BaseController;
     class AboutController {
      
-        public function about(){
+        public function index(){
             
             include 'App/view/About.php';
         }

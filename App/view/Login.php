@@ -28,7 +28,7 @@
                 style="background-color: #36454F ; width:164px; height:39px" id="submit">Submit</button>
         </form>
         <a class="btn text-white rounded-pill btn-outline-primary"
-            style="background-color: #36454F ; width:200px; height:39px;margin-top:20px;" href="signup.php">create new account !</a>
+            style="background-color: #36454F ; width:200px; height:39px;margin-top:20px;" href="Signup">create new account !</a>
     </div>
     <?php include 'includes/footer.php'; ?>
 
