@@ -1,18 +1,17 @@
 {
-    "name": "youcode/nv",
+    "name": "yasser/wiki",
     "autoload": {
         "psr-4": {
-            "core\\" : "core/",
-            "Youcode\\Nv\\": "src/",
-            "App\\" : "App/",
-            "router\\" : "core/"
-         }
+            "Yasser\\Wiki\\": "src/"
+        }
     },
     "authors": [
         {
-            "name": "BALIBLA MERIEM",
-            "email": "balibla.meriem@gmail.com"
+            "name": "Yasser",
+            "email": "aitelghariyasser@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
 }

@@ -1,125 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'includes/header_footer.php'; ?>
+    <title>PeoplePerTask</title>
+    <style>
+    .container-sign {
+        position: relative;
+        max-width: 100%;
+        /* min-height: 480px; */
+        min-height: 674px;
+        background-color: white;
+        /* border-radius: 10px; */
+        overflow: hidden;
+        /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25); */
+    }
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    .btn:hover {
+        background-color: white;
+    }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    .sign-up,
+    .sign-in {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
 
-  <!-- <link rel="stylesheet" href="../../public/assets/css/home.css"> -->
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    #signIn,
+    #signUp {
+        background-color: transparent;
+        border: 2px solid white;
+    }
 
-  <link rel="stylesheet" href="public/assets/css/header_footer.css">
-  <title></title>
+    a {
+        text-decoration: none;
+        color: white
+    }
+
+    input {
+        border: 1px solid black;
+    }
+    </style>
 </head>
 
 <body>
+    <?php include 'includes/navbar.php'; ?>
+    <section class="container-sign mt-5">
+        <div style="display:flex;flex-direction:column;width:100%;align-items:center;" class="sign-up">
+            <h2>Create Account</h2>
+            <form class="p-5" method="post"
+                style="display:flex;flex-direction:column;align-items:center;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;gap:0">
+                <div class="mb-1">
+                    <label for="name" style="font-size: 12px;" class="form-label">Username</label>
+                </div>
+                <div class="mb-1">
+                    <input name="name" id="name" placeholder="username">
+                </div>
+                <div class="mb-1">
+                    <label for="email" class="form-label" style="font-size: 12px;">Email</label>
+                </div>
+                <div class="mb-1">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="mb-1">
+                    <label for="password" class="form-label" style="font-size: 12px;">Password</label>
+                </div>
+                <div class="mb-1">
+                    <input type="password" name="password" id="password" placeholder="PassWord">
+                </div>
+                <div class="mb-1">
+                    <label for="password2" class="form-label" style="font-size: 12px;">confirm Password</label>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password2" id="password2" placeholder="confirm password">
+                </div>
+                <div>
+                    <button name="submit" type="submit" class="btn text-white rounded-pill"
+                        style="background-color: #36454F ; width:164px; height:39px" id="submit">Submit</button>
+                </div>
 
-<?php include "include/navbar.php" ?>
-
-<section class="vh-100" style="background-color: #eee;">
-  <div class="container h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-12 col-xl-11">
-        <div class="card text-black" style="border-radius: 25px;">
-          <div class="card-body p-md-5">
-            <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
-                <form class="mx-1 mx-md-4" method="POST" action ="Signup/signup">
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example1c">Your Name</label>
-                      <input name="name" type="text" id="form3Example1c" class="form-control" />
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example3c">Your Email</label>
-                      <input name="email" type="email" id="form3Example3c" class="form-control" />
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example4c">Password</label>
-                      <input name="password" type="password" id="form3Example4c" class="form-control" />
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                      <input name="confirm_password" type="password" id="form3Example4cd" class="form-control" />
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example4c">Role</label>
-                      <select type="password" id="form3Example4c" class="form-control" /></select>
-                      <option value=""></option>
-                    </div>
-                  </div>
-
-
-
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      I agree all statements in <a href="#!">Terms of service</a>
-                    </label>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <form action="">
-                      <button type="submit" name="submit" class="btn btn-primary btn-lg">Register</button>
-                    </form>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <p>Have already an account? </p><a href="Login">Login here</a>
-                  </div>
-
-                </form>
-
-              </div>
-              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-              <img src="public/images/login.webp"
-                  class="img-fluid" alt="Sample image">                
-              </div>
+            </form>
+            <div style="margin-top:20px;">
+                <a class="btn text-white rounded-pill"
+                    style="background-color: #36454F ; width:fit-content;padding:10px;padding-right:30px;padding-left:30px;"
+                        href="login.php">already have account !</a>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<?php include "include/footer.php" ?>
-
+    </section>
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>

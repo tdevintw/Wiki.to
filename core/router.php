@@ -16,18 +16,19 @@ class Router
     {
         $uri= $_SERVER['REQUEST_URI'] ?? '';
         $uri = explode('/', trim(strtolower($uri), '/'));
-        // var_dump(($uri));exit();
-        // dossier
+
+
         unset($uri[0]);
         // page
         if (!empty($uri[1])) {
             $controller = ucwords($uri[1] ) . 'Controller';
             unset($uri[1]);
             $controller = "App\Controller\\" . $controller;
+                    var_dump(($uri));exit();
             if (class_exists($controller)) {
                 $this->controller = $controller;
             } else {
-                include 'app/View/error404.php';
+                include '/app/View/error404.php';
                 exit;
             }
         }

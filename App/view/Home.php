@@ -1,107 +1,164 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'includes/header_footer.php'; ?>
+    <title>Document</title>
+    <style>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- header footer -->
-<script src=" ../../public/assets/dist/js_bootstrap/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/e80051e55f.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto&display=swap" rel="stylesheet">
-
-<!-- articles -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<link rel="stylesheet" href="public/assets/css/header_footer.css">
-<link rel="stylesheet" href="public/assets/css/article.css">
-<script src="public/assets/css/article.css"></script>
-
-  <title></title>
+    </style>
 </head>
-<body style="background-color: #eee;">
-    <?php include "include/navbar.php" ?>
-    <!-- <a href="#" class="theme-toggle">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
-            </a> -->
-    <div class="container mt-4">
-        <div class="row">
 
-        <div class=" col-md-6 text-center mb-4">
-            <div class="article-title card text-dark card-has-bg click-col" style="background-image:url('public/images/article.jpg');">
-                <div class="card-img-overlay d-flex flex-column">
-                    <div class="card-body">
-                        <h4 class="card-title mt-0 text-center">Title</h4>
-                        <p class="content mt-0 text-center">Categorie</p>
-                        <p class="content mt-0">Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. opt into their customized displays for a more consistent rendering across browsers and devices.</p>
-                    <button>Read more</button>
-
+<body>
+    <?php include 'includes/navbar.php'; ?>
+    <div>
+        <img src="../../public/images/bg-home.png" alt="home-bg" style="width:100%;z-index:-1;">
+        <div class="d-flex justify-content-center">
+            <div class="input-group" style="width:70%">
+                <input type="search" class="form-control rounded" placeholder="Search Wiki , Category , ..."
+                    aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-dark" data-mdb-ripple-init>search</button>
+            </div>
+        </div>
+    </div>
+    <div class="main mt-5 mb-5">
+        <div class="wikis-section">
+            <h2 class="pl-5">Lastest Wikis ADD:</h2>
+            <div class="cotainer" style="display:flex;justify-content:center;">
+                <div class="pt-5 pb-5"
+                    style="border-radius:5px;width:80%;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a style="" href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
-
-                </div>
-        </div></div>
-
-
-        <div class=" col-md-6 text-center mb-4">
-            <div class="article-title card text-dark card-has-bg click-col" style="background-image:url('public/images/article.jpg');">
-                <div class="card-img-overlay d-flex flex-column">
-                    <div class="card-body">
-                        <h4 class="card-title mt-0 text-center">Title</h4>
-                        <p class="content mt-0 text-center">Categorie</p>
-                        <p class="content mt-0">Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. opt into their customized displays for a more consistent rendering across browsers and devices.</p>
-                    <button>Read more</button>
-
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
-
-                </div>
-        </div></div>
-
-        <div class=" col-md-6 text-center mb-4">
-            <div class="article-title card text-dark card-has-bg click-col" style="background-image:url('public/images/article.jpg');">
-                <div class="card-img-overlay d-flex flex-column">
-                    <div class="card-body">
-                        <h4 class="card-title mt-0 text-center">Title</h4>
-                        <p class="content mt-0 text-center">Categorie</p>
-                        <p class="content mt-0">Bootstraps form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices. opt into their customized displays for a more consistent rendering across browsers and devices.</p>
-                    <button>Read more</button>
-
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
-
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../public/images/bg-home.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
-        </div></div>
-
+            </div>
+        </div>
+        <div class="categories-section mt-5">
+            <h2 class="pl-5">Lastest Categories ADD:</h2>
+            <div class="cotainer mt-5" style="display:flex;justify-content:center;">
+                <div class="pt-5 pb-5"
+                    style="border-radius:5px;width:80%;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+                    <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                            <button
+                        style="background-color:#4398E0;border-radius:20px;color:white;border:none;padding:30px;padding-right:60px;padding-left:60px;font-size:1rem;"><b>Technology
+                            </b></button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <?php include 'includes/footer.php'; ?>
+    <script>
+    // Initialization for ES Users
+    import {
+        Ripple,
+        initMDB
+    } from "mdb-ui-kit";
 
-<!-- categorie -->
-
-<div style="background-color : red;">
-    <?php if (isset($categories) && is_array($categories)) :
-            foreach ($categories as $category) :?>
-    <h1><?= $category['name'] ?></h1>
-    <p><?= $category['description'] ?></p>
-    <?php endforeach;
-          endif;?>
-</div>
-
-
- 
-    <?php include "include/footer.php" ?>
+    initMDB({
+        Ripple
+    });
+    </script>
 </body>
+
+</html>

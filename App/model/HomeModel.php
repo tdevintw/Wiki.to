@@ -2,7 +2,7 @@
     namespace App\Model;
     use App\Model\BaseModel; // Corrected case
 
-    class HomeModel extends BaseModel {
+    class HomeModel extends Model {
 
         // private $name;
         // private $description;
@@ -11,11 +11,10 @@
         // private $status;
         // private $auther;
 
-        public function __construct($name, $description, $categorie, $pictue_src, $status, $auther) {
+        public function __construct($name, $description, $category,  $status, $auther) {
             $this->name = $name;
             $this->description = $description;
             $this->categorie = $categorie;
-            $this->pictue_src = $pictue_src;
             $this->status = $status;
             $this->auther = $auther;
         }

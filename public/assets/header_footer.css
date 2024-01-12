@@ -7,7 +7,7 @@
 }
 
 a.nav-link {
-    color: black;
+    color: white;
 }
 
 .tags {
@@ -18,7 +18,7 @@ footer .top-footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgb(249, 222, 240) ;
+    background: #03740E;
     height: 16.4227rem;
 }
 
@@ -26,7 +26,7 @@ footer .top-footer {
     width: 100%;
     height: 4.9261rem;
     flex-shrink: 0;
-    background: rgb(233, 181, 220) ;
+    background: #01650B;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,21 +50,20 @@ footer .top-footer {
 
 .footer-links a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1rem;
 }
 
+.navbar {
+    background-color: green;
+}
 
 .navbar-brand img {
     width: 1.5rem;
 }
 
-.navbar {
-    background-color:  #eee;
-}
-
 .navbar span {
-    color: #000;
+    color: #FFF;
     font-family: Jockey One;
     font-size: 1.2rem;
     font-style: normal;
@@ -73,7 +72,7 @@ footer .top-footer {
 }
 
 footer span {
-    color: #000;
+    color: #FFF;
     font-family: Jockey One;
     font-size: 1.2rem;
     font-style: normal;
