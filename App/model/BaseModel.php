@@ -1,6 +1,6 @@
 <?php
 namespace App\Model;
-use core\Connexion;
+use core\Connection;
 use PDO;
 use PDOException;
 
@@ -9,7 +9,7 @@ class BaseModel {
     protected $db;
 
     public function __construct() {
-        $this->db = Connexion::getInstance()->getConnection();
+        $this->db = Connection::getInstance()->getConnection();
     }
 
     public function getById($table, $id)

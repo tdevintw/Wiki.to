@@ -12,8 +12,7 @@
             <i class="fas fa-gem me-3"></i>WIKI.TO
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            wiki is a website where you can read articles and create yours of you loves talking about what you love , cant wait to see your wikis
           </p>
         </div>
         <!-- Grid column -->
@@ -26,16 +25,16 @@
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Home</a>
+            <a href="Home" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Dashbord</a>
+            <a href="About" class="text-reset">About</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">About</a>
+            <a href="Login" class="text-reset">Login</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Login</a>
+            <a href="Signup" class="text-reset">Signup</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -44,13 +43,13 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-home me-3"></i> MOROCCO , YOUSSOUFIA</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
+            WIki.to@business.com
           </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          <p><i class="fas fa-phone me-3"></i> +212 57 98 98 98 98</p>
+
         </div>
         <!-- Grid column -->
       </div>

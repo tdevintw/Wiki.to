@@ -2,7 +2,7 @@
 namespace core;
 use PDO;
 use PDOException;
-class Connexion {
+class Connection{
     private static $instance;
     private $connection;
 
@@ -10,7 +10,7 @@ class Connexion {
         $servername = 'localhost';
         $username = 'root';
         $password = '';
-        $dbname = 'wiki';
+        $dbname = 'wiki.to_db';
 
         try {
             // connection
