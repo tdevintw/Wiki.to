@@ -1,6 +1,11 @@
 
 Project README
+
+
 Project Overview
+
+
+
 This project aims to develop an efficient Content Management System (CMS) with a user-friendly front-end to provide an exceptional user experience for a Wiki platform. The system will allow administrators to manage categories, tags, and wikis easily, while authors can create, edit, and delete their content. The front-end will focus on a seamless user interface, simplified registration, an effective search bar, and dynamic displays of the latest wikis and categories for easy navigation.
 
 Key Features
