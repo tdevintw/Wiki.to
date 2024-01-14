@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+
     <?php include 'includes/navbar.php'; ?>
     <div id="container"
         style="display:flex;flex-direction:column;align-items:center;margin-top:40px;margin-bottom:40px;">
@@ -23,6 +25,21 @@
             <div class="form-group">
                 <label style="margin-bottom:10px;" for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            </div>
+            <div style="margin-bottom:20px;">
+            <?php if(isset($errors['fill_all'])){
+                    echo $errors['fill_all'];
+                } ?>
+            </div>
+            <div style="margin-bottom:20px;">
+            <?php if(isset($errors['incorrect_password'])){
+                    echo $errors['incorrect_password'];
+                } ?>
+            </div>
+            <div style="margin-bottom:20px;">
+            <?php if(isset($errors['doesnt_exist'])){
+                    echo $errors['doesnt_exist'];
+                } ?>
             </div>
             <button name="submit" type="submit" class="btn text-white rounded-pill btn-outline-primary"
                 style="background-color: #36454F ; width:164px; height:39px" id="submit">Submit</button>

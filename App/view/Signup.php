@@ -54,28 +54,43 @@
             <form class="p-5" method="post"
                 style="display:flex;flex-direction:column;align-items:center;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;gap:0">
                 <div class="mb-1">
-                    <label for="name" style="font-size: 12px;" class="form-label">Username</label>
+                    <label for="username" style="font-size: 12px;" class="form-label">Username</label>
                 </div>
                 <div class="mb-1">
-                    <input name="name" id="name" placeholder="username">
+                    <input class="form-control" name="username" id="name" placeholder="username">
                 </div>
                 <div class="mb-1">
                     <label for="email" class="form-label" style="font-size: 12px;">Email</label>
                 </div>
                 <div class="mb-1">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Email">
                 </div>
                 <div class="mb-1">
                     <label for="password" class="form-label" style="font-size: 12px;">Password</label>
                 </div>
                 <div class="mb-1">
-                    <input type="password" name="password" id="password" placeholder="PassWord">
+                    <input class="form-control" type="password" name="password" id="password" placeholder="PassWord">
                 </div>
                 <div class="mb-1">
-                    <label for="password2" class="form-label" style="font-size: 12px;">confirm Password</label>
+                    <label for="repeat_password" class="form-label" style="font-size: 12px;">confirm Password</label>
                 </div>
                 <div class="mb-3">
-                    <input type="password" name="password2" id="password2" placeholder="confirm password">
+                    <input class="form-control" type="password" name="repeat_password" id="repeat_password" placeholder="confirm password">
+                </div>
+                <div>
+                <?php if(isset($errors['fill_all'])){
+                    echo $errors['fill_all'];
+                } ?>
+                </div>
+                <div>
+                <?php if(isset($errors['password_incorect'])){
+                    echo $errors['password_incorect'];
+                } ?>
+                </div>
+                <div>
+                <?php if(isset($errors['already_exist'])){
+                    echo $errors['already_exist'];
+                } ?>
                 </div>
                 <div>
                     <button name="submit" type="submit" class="btn text-white rounded-pill"

@@ -1,6 +1,6 @@
 <?php
 namespace App\Model;
-use core\Connection;
+use Core\Connection;
 use PDO;
 use PDOException;
 

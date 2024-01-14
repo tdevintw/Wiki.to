@@ -1,3 +1,13 @@
+<?php
+
+   if (session_status() == PHP_SESSION_NONE) {
+
+    session_start();
+}
+    if(isset($_SESSION['user_name'])){
+        $session_setted = $_SESSION['user_name'];
+    }
+?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary ">
   <a class="navbar-brand" href="./"><img src="images/Wiki.to_Logo.png" alt="logo" style="height:70px;"></a>
@@ -27,9 +37,23 @@
         <a class="nav-link" href="#">Categories</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0 justify-content-center" id ="auth-buttons" style="gap:20px">
-    <a href="Login" style="width:13rem" class="btn btn-outline-light my-2 my-sm-0">LogIn</a>
-    <a href="Signup" style="width:13rem" class="btn btn-outline-light my-2 my-sm-0">SignIn</button></a>
-    </form>
+    <?php 
+    if(isset($session_setted)){
+      echo "
+      <form class='form-inline my-2 my-lg-0 justify-content-center' id ='auth-buttons' style='gap:20px'>
+      <h3>welcome back ". $session_setted ."</a>
+      <a href='Login/Logout' style='width:13rem' class='btn btn-outline-light my-2 my-sm-0'>Logout</a>
+      </form>
+      ";
+    }else{
+      echo "
+      <form class='form-inline my-2 my-lg-0 justify-content-center' id ='auth-buttons' style='gap:20px'>
+      <a href='Login' style='width:13rem' class='btn btn-outline-light my-2 my-sm-0'>LogIn</a>
+      <a href='Signup' style='width:13rem' class='btn btn-outline-light my-2 my-sm-0'>SignIn</button></a>
+      </form>
+      ";
+    }
+
+    ?>
   </div>
 </nav>
