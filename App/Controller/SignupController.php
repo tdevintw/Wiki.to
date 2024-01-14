@@ -48,7 +48,7 @@ class SignupController extends BaseController
                         $role_id = '1';
                         $UserModel->addRole($user_id,$role_id);
 
-                        header("Location: Lognin");
+                        header("Location: Login");
                     }
                 }
             }
