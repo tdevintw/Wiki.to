@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <title>PeoplePerTask</title>
+    <title>wiki.to</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <div class="menu-section">
-                    <a href="Wiki"><img src="images/wikipedia.png" alt="tredning">
+                    <a href="Wikil"><img src="images/wikipedia.png" alt="tredning">
                         <p class="menu-paragraph">Manage Wikis</p>
                     </a>
                 </div>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="col-11" id="column2">
-            <div  id="nav-bar">
+            <div id="nav-bar">
                 <img id="menu-logo" style="height: 40px;" src="images/more.png" alt="menu">
                 <div id="nav-bar-section2">
                     <div id="profil">
@@ -53,55 +53,44 @@
                     </div>
                 </div>
             </div>
-            <div id="content">
-                <div class="cards">
-                    <div class="cards-content">
-                        <div class="card">
-                            <h3>total clients</h3>
-                            <div class="card-bottom">
-                                <h5>480</h5>
-                                <img src="images/ic1.png" alt="icon1">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <h3>Tags</h3>
-                            <div class="card-bottom">
-                                <h5>300</h5>
-                                <img src="images/ic3.svg" alt="icone2">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <h3>Categories</h3>
-                            <div class="card-bottom">
-                                <h5>102</h5>
-                                <img src="images/ic4.svg" alt="ic3">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <h3>Total Wikis</h3>
-                            <div class="card-bottom">
-                                <h5>10</h5>
-                                <img src="images/ic5.svg" alt="ic4">
-                            </div>
-                        </div>
-                    </div>
+            <form id="addCategoryForm" method="post">
+                <div style="display:flex;justify-content:end;margin-top:50px;padding-right:20px">
+                    <input style="width:150px;" class="form-control" name="category" id="category"
+                        placeholder="Category" required>
+                    <button type="submit" class="btn btn-success">Add</button>
                 </div>
-                <div class="row" id="mid-content"  style="padding-bottom:50px;>
-                    <div class="col-12" id="clients-stats"">
-                        <div id="header">
-                            <h3>Clients stats</h3>
-                            <div
-                                style="background-color: white;padding-left: 10px;padding-right: 10px;padding-top: 3px;padding-bottom: 5px;border-radius: 10px;">
-                                <!-- <div class="time">
-<h2>Last 7 Days</h2>
-<img src="images/Polygon 4.svg" alt="down-arrow">
-</div> -->
-                            </div>
-                        </div>
-                        <div id="chart"></div>
+            </form>
+            <div style="display:flex;justify-content:center;text-align:center;">
+                <table id="userTable" class="table table-striped" style="width:80%">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>category</th>
+                            <th>created date</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($categories as $category) : ?>
+                        <tr>
+                            <td><?php echo $category['id']; ?></td>
+                            <td><?php echo $category['category']; ?></td>
+                            <td><?php echo $category['created_dated']; ?></td>
+                            <td style="display:flex;justify-content:center;gap:10px;">
 
-                    </div>
-                </div>
+                               <form method="post" action="Category/delete">
+                               <input type="hidden" name="category_id" value="<?php echo $category['id']; ?>">
+                               <button type="submit" class="btn btn-danger">delete</button>
+                               </form>
+                               <form method="post" action="Category/update/<?php echo $category['id']; ?>">
+                               <button type="submit" class="btn btn-info">edit</button>
+                               <input placeholder="<?= $category['category'] ?>" name="category">
+                             </form>
+                            </td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

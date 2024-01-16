@@ -31,7 +31,7 @@ class BaseModel {
     public function index($table, $columns)
     {
         try {
-            $query = "SELECT $columns FROM $table ORDER BY id DESC LIMIT 5";
+            $query = "SELECT $columns FROM $table";
             $stmt = $this->db->prepare($query);
             
             // Exécutez la requête
@@ -53,7 +53,7 @@ class BaseModel {
                 $columns = implode(", ", array_keys($data));
                 $values = ":" . implode(", :", array_keys($data));
 
-                $query = "INSERT INTO $table ($columns) VALUES ($values)";
+                $query = "INSERT INTO categories (category) VALUES ($values)";
                 $stmt = $this->db->prepare($query); // Utilisez $this->db au lieu de $this->PDO
                 $stmt->execute($data);
 
@@ -87,7 +87,7 @@ class BaseModel {
 
 
         public function delete($id){
-            $statement = $this->db->prepare('DELETE FROM media WHERE id = :id');
+            $statement = $this->db->prepare('DELETE FROM category WHERE id = :id');
             $statement -> bindParam(":id",$id);
             return $statement->execute();
         }

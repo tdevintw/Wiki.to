@@ -1,26 +1,14 @@
-<?php 
-    namespace App\Model;
-    use App\Model\BaseModel; // Corrected case
+<?php
 
-    class HomeModel extends Model {
+namespace App\Model;
 
-        // private $name;
-        // private $description;
-        // private $categorie;
-        // private $pictue_src;
-        // private $status;
-        // private $auther;
+use App\model\BaseModel;
 
-        public function __construct($name, $description, $category,  $status, $auther) {
-            $this->name = $name;
-            $this->description = $description;
-            $this->categorie = $categorie;
-            $this->status = $status;
-            $this->auther = $auther;
-        }
+class HomeModel extends BaseModel {
+    protected $table = 'categories'; // Assuming your categories table is named 'categories'
 
-        // public function index() {
-        //     return parent::index('categorie', '*'); // Corrected syntax
-        // }
-        
+    public function getCategories() {
+        // Use the index method from the BaseModel to fetch all categories
+        return $this->index($this->table, '*');
     }
+}

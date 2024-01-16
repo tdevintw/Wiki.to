@@ -20,15 +20,8 @@
       <li class="nav-item active">
         <a class="nav-link" href="./"><span style="font-weight:bold;font-size:2rem;">Wiki.to</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Your Wikis
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item"  href="#">Manage wiki</a>
-          <a class="dropdown-item"  href="#">add wiki</a>
-          <a class="dropdown-item " href="#">delete wiki</a>
-        </div>
+      <li class="nav-item">
+      <a class="nav-link" href="Dashboard">Dashboard</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="About">About</a>
